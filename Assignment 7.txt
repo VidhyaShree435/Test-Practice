@@ -1,0 +1,79 @@
+Assignment Seven
+Localization Testing.
+
+- 10 test cases in excel
+- Take relevant URL
+
+https://www.wikipedia.org/
+
+Test Cases for Localization Testing of Wikipedia Website:
+Language Selection Test:
+
+Description: Verify that the website allows users to select different languages.
+Steps:
+Open the Wikipedia website.
+Check for the presence of a language selection dropdown or menu.
+Select a language other than the default.
+Verify that the content on the page changes to the selected language.
+Language Switching Persistence Test:
+
+Description: Verify that the selected language preference persists across different pages.
+Steps:
+Select a language from the language selection menu.
+Navigate to different pages within the website.
+Check if the selected language preference remains consistent on all pages.
+Localized Content Test:
+
+Description: Verify that the content displayed is localized according to the selected language.
+Steps:
+Select a specific language from the language menu.
+Verify that menus, headers, and other textual content are displayed in the selected language.
+Check a few articles to ensure their content is localized too.
+Date and Time Format Test:
+
+Description: Verify that date and time formats are displayed according to the selected localization.
+Steps:
+Change the language to a non-default option.
+Check for dates (e.g., article creation dates) and timestamps on the website.
+Verify that they are displayed in the format common to the selected language and region.
+Currency Display Test:
+
+Description: Verify that currency symbols and formats are displayed correctly according to the selected localization.
+Steps:
+Change the language and region to a specific country.
+Look for any monetary values on the website.
+Verify that the currency symbol and formatting match the selected country's standards.
+Special Characters Test:
+
+Description: Verify that special characters specific to the selected language are displayed correctly.
+Steps:
+Select a language with unique special characters (e.g., accented letters).
+Create or edit a page with content using these special characters.
+Verify that the characters are displayed and saved correctly.
+Search Functionality Test:
+
+Description: Verify that the search functionality works correctly with localized keywords.
+Steps:
+Change the language to a specific one.
+Perform a search using keywords in that language.
+Verify that relevant results are displayed, and the search algorithm is sensitive to language-specific nuances.
+Error Messages Test:
+
+Description: Verify that error messages and validation prompts are displayed in the selected language.
+Steps:
+Change the language to a specific one.
+Intentionally trigger an error (e.g., submit an empty form).
+Verify that the error message displayed is in the selected language.
+Accessibility Test:
+
+Description: Verify that localized content is accessible to users with disabilities.
+Steps:
+Enable a screen reader or other accessibility tools.
+Navigate through the website in the selected language.
+Verify that all localized content is read out correctly by the screen reader without any ambiguities.
+RTL (Right-to-Left) Language Test:
+
+Description: Verify that languages that are read from right to left are displayed correctly.
+Steps:
+Change the language to a RTL language (e.g., Arabic or Hebrew).
+Verify that the text alignment, layout, and overall design are mirrored and displayed correctly for RTL languages.
