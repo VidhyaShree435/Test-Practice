@@ -1,0 +1,411 @@
+Requirement
+
+1) What’s full form of SRS? 
+   Software Requirement Specification
+2) Why SRS is important in Manual Testing?
+   i) Understanding Requirements: Manual testers need a clear understanding of the software's requirements to conduct effective testing. 
+      SRS provides detailed information about what the software is expected to do, helping testers align their efforts with the intended functionality.
+   ii)Test Planning: Test planning involves determining what to test, how to test it, and what resources are required. 
+      SRS acts as a reference point for manual testers to create test plans. It helps testers identify the scope of testing and plan their test cases accordingly.
+   iii)Test Design: Testers design test cases based on the requirements outlined in the SRS document. 
+       Each requirement in the SRS can be mapped to specific test cases, ensuring that all functionalities are tested thoroughly.
+   iv)Test Execution: During test execution, testers verify whether the software behaves as described in the SRS. 
+       They perform manual tests to validate that the application meets the specified requirements and report any discrepancies.
+    v)Regression Testing: When changes are made to the software, either due to bug fixes or new features, manual testers often conduct regression testing to ensure that existing functionalities still work as intended. The SRS serves as a reference to determine the expected behavior during regression testing.
+    vi)Traceability: SRS provides a basis for traceability, allowing testers to trace test cases back to specific requirements. 
+       This traceability ensures that all requirements have been tested and provides a clear picture of the testing coverage.
+    vii)Bug Reporting: When testers find defects or issues during manual testing, they refer to the SRS to validate whether the behavior observed deviates from the specified requirements. 
+        Clear reference to the SRS helps developers understand the expected behavior and fix the issues effectively.
+    viii) User Experience Testing: SRS often includes user experience requirements. Manual testers use these requirements to evaluate the software from a user perspective, ensuring that the interface is intuitive and user-friendly.
+3) What is Use Cases?
+   A use case is a description of how a system interacts with an external entity, such as a user or another system, to accomplish a specific goal. 
+   It outlines the interactions between the system and its users, describing various scenarios that illustrate the system's behavior. 
+   Use cases are widely used in software engineering and systems analysis to capture, clarify, and organize system requirements.
+4) Design 5 different Use Cases?
+   1. E-commerce Platform: Online Purchase
+Actors: Customer, E-commerce System
+
+Description: The customer wants to purchase a product from the e-commerce platform.
+
+Steps:
+
+Customer logs into their account.
+Customer browses products and adds items to the cart.
+Customer proceeds to checkout, enters shipping details, and selects payment method.
+E-commerce system verifies payment and updates inventory.
+System sends confirmation email to the customer and updates order status.
+2. Healthcare System: Appointment Scheduling
+Actors: Patient, Receptionist, Healthcare System
+
+Description: The patient wants to schedule a doctor's appointment.
+
+Steps:
+
+Patient contacts the receptionist to schedule an appointment.
+Receptionist checks doctor’s availability in the healthcare system.
+Receptionist schedules the appointment, assigns a unique ID, and notifies the patient.
+System updates the doctor’s schedule and sends appointment details to both the patient and the doctor.
+Patient receives confirmation and reminder before the appointment.
+3. Smart Home Automation: Home Security
+Actors: Homeowner, Security System
+
+Description: The homeowner wants to monitor their home security remotely.
+
+Steps:
+
+Homeowner logs into the security system's mobile app.
+Homeowner views live camera feeds and sensor statuses.
+Homeowner receives instant alerts for any security breaches.
+Homeowner remotely activates/deactivates security devices (e.g., alarms, cameras).
+Security system logs all activities and sends notifications for significant events.
+4. Education Platform: Online Quiz
+Actors: Student, Instructor, Online Quiz System
+
+Description: Students take an online quiz created by the instructor.
+
+Steps:
+
+Instructor creates a quiz, adds questions, and sets time limits.
+Student accesses the quiz, reads instructions, and starts answering questions.
+Online quiz system records student responses and calculates scores.
+Student submits the quiz within the time limit.
+Instructor reviews results, provides feedback, and updates student records.
+5. Travel Booking Platform: Flight Reservation
+Actors: Traveler, Travel Agency System
+
+Description: Traveler wants to book a flight ticket for a specific destination.
+
+Steps:
+
+Traveler searches for available flights by entering departure and destination cities, along with travel dates.
+Travel agency system displays a list of available flights with prices and timings.
+Traveler selects a flight, provides passenger details, and chooses seat preferences.
+System confirms seat availability, calculates the total cost, and requests payment.
+Traveler makes the payment, receives e-ticket via email, and booking details are stored in the system.
+What are Non-functional Requirement in SRS?
+Design an Use Case Diagram? Describe briefly.
+
+Test Cases
+
+1) What is a Test Case?
+   A test case is a detailed set of conditions or variables under which a tester will determine whether a software application, system, or one of its features is working correctly or not. 
+   It specifies inputs, execution conditions, and expected results to validate if a particular feature of the software is functioning as intended.
+2) List out level of Test Cases? What are fields of a Test case Template?
+   i). Unit Test Cases:
+       Test individual components or modules of the software in isolation.
+       Focus on validating the smallest parts of the software, such as functions, methods, or classes.
+  ii). Integration Test Cases:
+       Test the interaction between different components or modules.
+       Ensure that integrated components work together as expected.
+   iii). Functional Test Cases:
+       Validate the functional requirements of the software.
+       Test the software from an end-user perspective to ensure it behaves as expected.
+   iv). System Test Cases:
+       Test the entire system as a whole.
+       Verify that the system meets specified requirements and behaves correctly in different environments.
+   v). Acceptance Test Cases:
+       Validate if the software meets the acceptance criteria defined by stakeholders.
+       Ensure the software is ready for deployment and use in the real world.
+       Fields of a Test Case Template:
+       A well-structured test case template typically includes the following fields:
+
+   Test Case ID: A unique identifier for the test case.
+
+   Test Case Description: A brief description of the test case, outlining what is being tested.
+
+   Test Steps: Detailed, step-by-step instructions for executing the test case. Each step should be clear and unambiguous.
+
+   Test Data: Input data or conditions required to execute the test case. This could include specific values, files, or configurations.
+
+   Expected Results: The expected outcome after executing the test steps. This could be a specific behavior, system response, or output.
+
+   Actual Results: The actual outcome observed during testing. This field is filled in after the test case is executed.
+
+   Status: Indicates whether the test case has passed, failed, or is pending.
+
+   Priority: The priority level of the test case, indicating its importance in the testing process.
+
+   Severity: The impact level of a defect if the test case fails, ranging from critical to minor.
+
+   Preconditions: Any necessary setup or conditions that must be met before executing the test case.
+
+   Postconditions: The state of the system after the test case has been executed.
+
+   Environment: Information about the testing environment, including hardware, software, and network configurations.
+
+   Dependencies: Any dependencies on other test cases, modules, or components.
+
+   3) Write test cases for Gmail Login? Give at least 5 examples?
+     
+     Test Case 1: Verify Successful Login with Valid Credentials
+Test Steps:
+
+Navigate to the Gmail login page.
+Enter a valid Gmail email address.
+Enter a valid password.
+Click on the "Next" button.
+Verify that the user is successfully logged into their Gmail account and redirected to the inbox page.
+Expected Result: The user should be able to log in successfully without any errors.
+
+Test Case 2: Verify Error Message for Incorrect Password
+Test Steps:
+
+Navigate to the Gmail login page.
+Enter a valid Gmail email address.
+Enter an incorrect password.
+Click on the "Next" button.
+Verify that an error message is displayed indicating that the password is incorrect.
+Expected Result: An error message should be displayed, informing the user that the password provided is incorrect.
+
+Test Case 3: Verify Error Message for Invalid Email Address
+Test Steps:
+
+Navigate to the Gmail login page.
+Enter an invalid Gmail email address (without @gmail.com domain).
+Enter a valid password.
+Click on the "Next" button.
+Verify that an error message is displayed indicating that the email address is not valid.
+Expected Result: An error message should be displayed, informing the user that the email address provided is not valid.
+
+Test Case 4: Verify Account Lockout after Multiple Failed Login Attempts
+Test Steps:
+
+Navigate to the Gmail login page.
+Enter a valid Gmail email address.
+Enter an incorrect password.
+Repeat step 3 for a specified number of times (e.g., 5 times).
+Verify that the account is temporarily locked after the specified number of failed login attempts.
+Expected Result: After the specified number of failed login attempts, the account should be temporarily locked for security purposes.
+
+Test Case 5: Verify "Forgot Password" Functionality
+Test Steps:
+
+Navigate to the Gmail login page.
+Click on the "Forgot password?" link.
+Enter the recovery email address or phone number associated with the account.
+Follow the password recovery steps (usually involves receiving a verification code via email or phone).
+Set a new password for the account.
+Attempt to log in using the new password.
+Verify that the user can log in successfully with the new password.
+Expected Result: The user should be able to recover their password successfully and log in with the new password.
+
+
+  4) Design 3 positive Test cases and 3 negative test cases regarding: http://newtours.demoaut.com
+ 
+Positive Test Cases:
+Test Case 1: Successful User Login
+Test Steps:
+
+Navigate to the NewTours demo website.
+Enter valid username and password.
+Click on the "Sign-In" button.
+Expected Result: User should be redirected to a welcome or home page, indicating successful login.
+
+Test Case 2: Verify Flight Booking
+Test Steps:
+
+Log in to the NewTours demo website with valid credentials.
+Select a departure city, destination city, date, and other required flight details.
+Click on the "Find Flights" button.
+Select a flight and proceed to booking.
+Complete the booking process by providing passenger details and payment information.
+Expected Result: User should receive a booking confirmation and itinerary for the selected flight.
+
+Test Case 3: Password Recovery
+Test Steps:
+
+Click on the "Forgotten Password" link on the login page.
+Enter the registered email address.
+Follow the password recovery instructions (usually involves receiving a password reset link via email).
+Set a new password.
+Attempt to log in using the new password.
+Verify that the user can log in successfully with the new password.
+Expected Result: User should be able to recover the password and log in with the new password.
+
+Negative Test Cases:
+Test Case 1: Invalid Login - Incorrect Username
+Test Steps:
+
+Navigate to the NewTours demo website.
+Enter a valid password but an incorrect username.
+Click on the "Sign-In" button.
+Expected Result: User should see an error message indicating that the username is incorrect.
+
+Test Case 2: Invalid Login - Incorrect Password
+Test Steps:
+
+Navigate to the NewTours demo website.
+Enter a valid username but an incorrect password.
+Click on the "Sign-In" button.
+Expected Result: User should see an error message indicating that the password is incorrect.
+
+Test Case 3: Account Lockout after Multiple Failed Login Attempts
+Test Steps:
+
+Navigate to the NewTours demo website.
+Enter incorrect login credentials for a specified number of times (e.g., 5 times).
+Click on the "Sign-In" button after each attempt.
+Expected Result: After the specified number of failed login attempts, the account should be temporarily locked, and the user should be informed about the account lockout for security reasons.
+
+4) What problems you face in writing test cases?
+1. Incomplete Requirements:
+Lack of clear and detailed requirements can make it difficult to create comprehensive test cases.
+2. Ambiguous Requirements:
+Ambiguities in requirements can lead to confusion and misinterpretation, resulting in incorrect test cases.
+3. Changing Requirements:
+Requirements often change during the development process, requiring constant updates and modifications to existing test cases.
+4. Assumptions and Dependencies:
+Testers might make assumptions about the system's behavior or dependencies, leading to incomplete test coverage.
+5. Complex Business Logic:
+Systems with intricate business rules and logic require thorough understanding, making it challenging to create test cases that cover all scenarios.
+6. Variety of Inputs:
+It's difficult to anticipate all possible inputs, especially in systems where users can enter diverse data.
+7. Integration Challenges:
+Writing test cases for integrated systems is complex due to dependencies and interactions between different modules.
+8. Time and Resource Constraints:
+Limited time and resources can restrict the number of test cases that can be written and executed thoroughly.
+9. Lack of Domain Knowledge:
+Testers without sufficient domain knowledge might struggle to create relevant and effective test cases.
+10. Maintaining Traceability:
+Ensuring that each requirement has corresponding test cases and that changes are tracked accurately can be challenging.
+11. Reusability and Redundancy:
+Balancing between creating reusable test cases and avoiding redundancy can be difficult to achieve.
+12. User Experience Testing:
+Writing test cases that comprehensively cover user experience aspects, such as usability and accessibility, requires specific expertise.
+13. Negative Testing:
+Identifying and testing scenarios where the system should fail can be overlooked, leading to incomplete test coverage.
+14. Localization and Globalization:
+Ensuring that the software functions correctly across different languages, regions, and cultures adds complexity to test case design.
+15. Security Testing:
+Writing test cases to assess the system's security vulnerabilities and ensuring that sensitive data is protected from unauthorized access.
+
+
+5) What is called a good Test Case? What is a bad Test Case?
+   A Good Test Case:
+
+Clear and Specific: A good test case is clear, specific, and easy to understand. It clearly outlines the steps to be performed and the expected outcomes.
+
+Reproducible: The test case should be reproducible, meaning that it can be executed multiple times with the same results.
+
+Independent: Each test case should be independent of others. Changes in one test case should not affect the execution or results of other test cases.
+
+Cover Various Scenarios: A good test case covers different scenarios, including positive and negative cases, boundary conditions, and valid/invalid inputs.
+
+Traceable: A good test case is traceable to specific requirements. It should be clear which requirement(s) it is verifying.
+
+Manageable: Test cases should be manageable in terms of time and resources. They should be realistic and feasible to execute within the available constraints.
+
+Prioritized: Test cases are often prioritized based on critical features or functionalities. A good test case indicates its priority level, helping testers focus on high-priority areas first.
+
+Accurate: Test cases should be accurate and free from errors. They should not lead to false positives or false negatives.
+
+Maintainable: Test cases should be easy to maintain and update, especially when there are changes in the requirements or the application.
+
+Well-Documented: Test cases are properly documented with clear instructions, preconditions, test data, steps, expected results, and actual results after execution.
+
+A Bad Test Case:
+
+Ambiguous: Test cases that are unclear, ambiguous, or incomplete are bad test cases. They can lead to confusion and misinterpretation.
+
+Not Reproducible: Test cases that do not produce consistent results upon repeated executions are not useful for testing.
+
+Dependent: Test cases that rely on the success or failure of other test cases are bad. Each test case should stand alone.
+
+Inadequate Coverage: Test cases that do not cover essential features, edge cases, or critical functionalities are not effective.
+
+Untraceable: Test cases that are not linked to specific requirements are not traceable, making it difficult to understand their purpose.
+
+Unrealistic: Test cases that involve unrealistic or improbable scenarios may not provide meaningful testing insights.
+
+Overly Complex: Test cases that are overly complex, involving too many steps or conditions, can be difficult to execute and understand.
+
+Outdated: Test cases that have not been updated to reflect changes in requirements or the application are not reliable.
+
+Poorly Organized: Test cases that lack proper structure, organization, or documentation are challenging to follow and execute.
+
+Not Prioritized: Test cases that do not indicate their priority level can lead to inefficient testing, especially when there are time constraints.
+
+
+
+6) What are guidelines for writing Test Cases?
+  
+  1. Understand the Requirements:
+Thoroughly understand the requirements before writing test cases. Clear requirements lead to precise test cases.
+2. Be Clear and Concise:
+Write clear and concise test cases. Avoid ambiguity and use simple language that is easily understandable.
+3. Use a Standard Template:
+Use a standard test case template that includes fields for test case ID, description, steps, expected results, actual results, status, etc.
+4. Write Test Cases from End User’s Perspective:
+Write test cases that mimic real-world scenarios and user interactions. Think like an end user while designing test cases.
+5. Cover Different Scenarios:
+Cover positive and negative scenarios, edge cases, and different input combinations to ensure comprehensive testing.
+6. Keep Each Test Case Independent:
+Each test case should be independent and not rely on the success or failure of other test cases.
+7. Prioritize Test Cases:
+Prioritize test cases based on critical features, functionalities, and business requirements.
+8. Use Appropriate Test Data:
+Use relevant and valid test data. Test cases should cover different data types and values.
+9. Ensure Reproducibility:
+Ensure that the test case is reproducible. The same steps should yield the same results every time.
+10. Include Preconditions:
+Clearly state any preconditions necessary for executing the test case (e.g., logged in as a specific user).
+11. Be Mindful of Assumptions:
+Clearly document any assumptions made while writing the test case.
+12. Include Cleanup Steps:
+Include steps to return the system to a known state after executing the test case, especially for tests that involve data manipulation.
+13. Review and Validate:
+Review the test cases for accuracy and completeness. Validate them to ensure they accurately represent the requirements.
+14. Be Mindful of Test Case Maintenance:
+Write test cases in a way that makes them easy to update and maintain, especially when requirements change.
+15. Include Negative Testing:
+Don’t just test what should work, test what shouldn’t work. Include negative test cases to validate error handling and boundary conditions.
+16. Use Version Control:
+If multiple team members are working on test cases, use version control systems to manage changes and avoid conflicts.
+17. Provide Detailed Steps:
+Provide step-by-step instructions. Make it easy for testers to follow the test case.
+18. Use Automation-Friendly Language:
+If automation is planned, write test cases in a way that’s easy to automate.
+19. Include End-to-End Scenarios:
+Include test cases that cover end-to-end scenarios to validate the entire workflow of the application.
+20. Document Expected and Actual Results:
+Clearly document both the expected and actual results after executing the test case.
+
+
+7) What is Test Data? Why is it important?
+Test data refers to the input or set of values used during the execution of test cases to validate the functionality of a software application. Test data can include a wide range of inputs, such as numbers, strings, dates, files, user interactions, and more. It is the data that represents different scenarios and conditions under which the software is tested. Test data is an integral part of software testing, serving several important purposes:
+
+Importance of Test Data:
+Validation of Requirements:
+
+Test data allows testers to validate whether the software behaves as expected under various input conditions, ensuring that it meets the specified requirements.
+Positive and Negative Testing:
+
+Test data enables testers to perform both positive testing (valid inputs) and negative testing (invalid inputs, error conditions), ensuring robustness and error handling in the software.
+Boundary and Edge Cases:
+
+Test data includes boundary values and edge cases, allowing testers to assess how the software performs at the limits of its capabilities. This helps identify potential issues related to data limits or overflow.
+Scenario Testing:
+
+Different test data sets create various testing scenarios, allowing testers to assess the software's behavior under different user interactions and input combinations.
+Data Integrity and Security:
+
+Test data is used to validate data integrity, ensuring that data is stored, retrieved, and processed correctly. It also helps in testing security measures to protect sensitive data.
+Compatibility Testing:
+
+Test data is crucial for compatibility testing, where different configurations, devices, or platforms are tested with varying data inputs to ensure the software works seamlessly across diverse environments.
+Regression Testing:
+
+Test data is reused for regression testing to verify that new changes or updates in the software do not adversely impact existing functionalities.
+Performance Testing:
+
+Test data is used in performance testing scenarios to evaluate how the software performs under different loads, transaction volumes, and data sizes.
+User Experience Testing:
+
+Test data can represent real user data, allowing testers to assess the user experience and usability aspects of the software application.
+Debugging and Issue Isolation:
+
+Test data is essential for reproducing reported issues. Developers use specific test data sets to recreate reported problems, aiding in debugging and issue isolation.
+
+
+8) Develop Test cases for Flight Reservation Application?
+(Use standard guidelines to write your test cases. Cover all sections provided in SRS).
